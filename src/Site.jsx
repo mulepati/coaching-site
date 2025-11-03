@@ -1,4 +1,5 @@
 import { useState } from "react";
+import FAQ from "./FAQ.jsx";
 
 export default function Site() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -150,27 +151,7 @@ export default function Site() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="border-t border-neutral-200">
-        <div className="mx-auto max-w-7xl px-6 xl:px-8 py-14 md:py-20 xl:py-24">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">FAQ</h2>
-          <div className="mt-6 space-y-3">
-            {[
-              { q: 'Is this therapy?', a: 'No. Coaching is forward-moving. We work from the present toward clarity, joy, and aligned action.' },
-              { q: 'Who do you work with?', a: 'I primarily coach men ages 24–40 who feel stuck in some part of life — though the tools apply broadly.' },
-              { q: 'What does a session look like?', a: '60 minutes on Zoom. We work with somatic, emotional, and practical tools on what feels most alive for you.' },
-              { q: 'How do I start?', a: 'Book a free intro session. We’ll meet, feel for fit, and map your first steps.' },
-            ].map((item, i) => (
-              <details key={i} className="group rounded-2xl border border-neutral-200 p-4 open:bg-neutral-50">
-                <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
-                  <span>{item.q}</span>
-                  <span className="ml-4 text-neutral-400 group-open:rotate-180 transition">▾</span>
-                </summary>
-                <p className="mt-2 text-neutral-700">{item.a}</p>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
+      <FAQ />
 
       {/* Contact / CTA */}
       <section id="contact" className="border-t border-neutral-200 bg-neutral-900 text-white">
@@ -250,4 +231,3 @@ export default function Site() {
     </div>
   );
 }
-
