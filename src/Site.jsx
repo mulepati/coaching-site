@@ -8,12 +8,10 @@ export default function Site() {
       <header className="sticky top-0 z-40 bg-white/70 backdrop-blur border-b border-neutral-200">
         <div className="mx-auto max-w-7xl px-6 xl:px-8 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="h-7 w-7 rounded-xl bg-neutral-900" />
             <span className="font-semibold tracking-tight">Samek</span>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <a href="#who" className="hover:opacity-70">Who I Am</a>
-            <a href="#topics" className="hover:opacity-70">What I Coach</a>
             <a href="#approach" className="hover:opacity-70">My Approach</a>
             <a href="#background" className="hover:opacity-70">Background</a>
             <a href="#faq" className="hover:opacity-70">FAQ</a>
@@ -29,14 +27,15 @@ export default function Site() {
         <div className="mx-auto max-w-7xl px-6 xl:px-8 py-16 md:py-24 xl:py-28">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-semibold leading-tight tracking-tight">Embodiment Coaching</h1>
-            <p className="mt-4 text-lg text-neutral-600">For people who feel stuck, overwhelmed, or find life unfulfilling. </p>
+            <p className="mt-4 text-lg text-neutral-600">For people who want to live with more clarity, ease, and self-trust. </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a href="https://cal.com/samek" className="inline-flex items-center rounded-2xl bg-neutral-900 px-5 py-3 text-white font-medium hover:opacity-90">Book a free intro session</a>
               <a href="#approach" className="inline-flex items-center rounded-2xl border border-neutral-300 px-5 py-3 font-medium hover:bg-neutral-50">How it works</a>
             </div>
             <div className="mt-6 flex flex-wrap items-center gap-2 text-sm text-neutral-500">
               <span>Also: </span>
-              <a className="underline hover:no-underline" href="https://harryandsamek.com" target="_blank" rel="noreferrer">Attunement Residency</a>
+              <a className="underline hover:no-underline" href="https://harryandsamek.com" target="_blank" rel="noreferrer">Attunement Residency,</a>
+              <a className="underline hover:no-underline" href="https://www.youtube.com/@TheAttunementPodcast" target="_blank" rel="noreferrer">Attunement Podcast</a>
             </div>
           </div>
         </div>
@@ -47,8 +46,8 @@ export default function Site() {
         <div className="mx-auto max-w-7xl px-6 xl:px-8 py-14 md:py-20 xl:py-24 grid md:grid-cols-5 gap-10">
           <div className="md:col-span-3">
             <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Who I Am</h2>
-            <p className="mt-4 text-neutral-700 leading-relaxed">I’m Samek. I’m an embodiment coach who helps you get in touch with your body with loving presence so you can move from clarity. I meet you where you’re at and support you in seeing the wisdom inside your emotions — so self-trust becomes natural and decision-making becomes simple.</p>
-            <p className="mt-4 text-neutral-700 leading-relaxed">This work is about empowerment. You already have what you need — coaching helps you see it and act from it.</p>
+            <p className="mt-4 text-neutral-700 leading-relaxed">I’m Samek. I’m an embodiment coach who helps you get in touch with your body with loving presence so you can move from clarity. I meet you where you’re at and support you in seeing the wisdom inside your emotions, so self-trust becomes natural and decision-making becomes simple.</p>
+            <p className="mt-4 text-neutral-700 leading-relaxed">This work is about empowerment. You already have what you need, coaching helps you see it and act from it.</p>
           </div>
           <div className="md:col-span-2">
             <div className="aspect-[4/3] w-full rounded-2xl bg-neutral-100 border border-neutral-200" aria-hidden="true" />
@@ -57,33 +56,11 @@ export default function Site() {
         </div>
       </section>
 
-      {/* What You Could Be Coached On */}
-      <section id="topics" className="border-t border-neutral-200 bg-neutral-50">
-        <div className="mx-auto max-w-7xl px-6 xl:px-8 py-14 md:py-20 xl:py-24">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">What you can be coached on</h2>
-          <p className="mt-3 text-neutral-600">Clear, practical support across life domains.</p>
-          <div className="mt-8 grid md:grid-cols-2 gap-6">
-            {[
-              { title: 'Money', desc: 'Shift from fear/projection into simplicity and flow.' },
-              { title: 'Relationships', desc: 'Dating, intimacy, and naming true wants.' },
-              { title: 'Career & Creativity', desc: 'From procrastination to aligned movement.' },
-              { title: 'Stuckness', desc: 'Find movement without bypassing what’s real.' },
-              { title: 'Everyday Alignment', desc: 'Presence, clarity, and ease in daily life.' },
-            ].map((item) => (
-              <div key={item.title} className="rounded-2xl border border-neutral-200 bg-white p-6">
-                <h3 className="text-lg font-medium">{item.title}</h3>
-                <p className="mt-2 text-neutral-600">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* My Approach */}
       <section id="approach" className="border-t border-neutral-200">
         <div className="mx-auto max-w-7xl px-6 xl:px-8 py-14 md:py-20 xl:py-24">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">My approach</h2>
-          <p className="mt-4 text-neutral-700 leading-relaxed">I blend executive-level frameworks from Art of Accomplishment with somatic tools, meditation, and parts work. Helping you see your authentic wants, reclaim agency, and act from clarity.</p>
+          <p className="mt-4 text-neutral-700 leading-relaxed">I blend executive-level frameworks from Art of Accomplishment with somatic tools, meditation, and parts work. Helping you see your authentic wants, reclaim agency, and act from clarity.<br/><br/>Embodying your entire Intelligence, from your rational reasoning capabilities of your head, the wisdom in each of your emotions from your body, and your natural instincts. In learning to move using your whole self. Over time, people notice they make decisions more holistically, enjoy life more, and feel a steady sense of self-trust.</p>
           <ul className="mt-6 grid md:grid-cols-3 gap-4 text-sm text-neutral-700">
             <li className="rounded-xl border border-neutral-200 p-4 bg-neutral-50">Session length: 60 minutes on Zoom</li>
             <li className="rounded-xl border border-neutral-200 p-4 bg-neutral-50">Bring what’s most alive</li>
@@ -102,7 +79,7 @@ export default function Site() {
               <ul className="list-disc pl-5 space-y-2 text-neutral-700">
                 <li>Training with <span className="font-medium">Art of Accomplishment</span> (Executive Coaching)</li>
                 <li>Years of meditation and consciousness practice</li>
-                <li>Facilitator of retreats & group coaching containers</li>
+                <li>Facilitator of retreats & group containers</li>
                 <li>Co-host of the <span className="font-medium">Attunement Podcast</span></li>
                 <li>Co-founder of the <span className="font-medium">Attunement Residency</span></li>
               </ul>
