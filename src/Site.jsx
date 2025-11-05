@@ -26,7 +26,7 @@ export default function Site() {
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-neutral-50 to-white" />
         <div className="mx-auto max-w-7xl px-6 xl:px-8 py-16 md:py-24 xl:py-28">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl xl:text-6xl font-semibold leading-tight tracking-tight">Embodiment Coaching</h1>
+            <h1 className="text-4xl md:text-5xl xl:text-6xl font-semibold leading-tight tracking-tight">Coaching</h1>
             <p className="mt-4 text-lg text-neutral-600">For people who want to live with more clarity, ease, and self-trust. </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a href="https://cal.com/samek" className="inline-flex items-center rounded-2xl bg-neutral-900 px-5 py-3 text-white font-medium hover:opacity-90">Book a free intro session</a>
@@ -46,7 +46,7 @@ export default function Site() {
         <div className="mx-auto max-w-7xl px-6 xl:px-8 py-14 md:py-20 xl:py-24 grid md:grid-cols-5 gap-10">
           <div className="md:col-span-3">
             <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Who I Am</h2>
-            <p className="mt-4 text-neutral-700 leading-relaxed">I’m Samek. I’m an embodiment coach who helps you get in touch with your body with loving presence so you can move from clarity. I meet you where you’re at and support you in seeing the wisdom inside your emotions, so self-trust becomes natural and decision-making becomes simple.</p>
+            <p className="mt-4 text-neutral-700 leading-relaxed">I’m Samek. I’m a coach who helps you get in touch with your body with loving presence so you can move from clarity. I meet you where you’re at and support you in seeing the wisdom inside your emotions, so self-trust becomes natural and decision-making becomes simple.</p>
             <p className="mt-4 text-neutral-700 leading-relaxed">This work is about empowerment. You already have what you need, coaching helps you see it and act from it.</p>
           </div>
           <div className="md:col-span-2">
