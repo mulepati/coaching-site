@@ -76,28 +76,6 @@ export default function HomePage() {
           </Link>
         ))}
       </section>
-
-      <Link
-        href={homeContent.writingCallout.href}
-        className="explore-link group relative block overflow-hidden rounded-[2rem] border border-ink/12 bg-paper/38 px-5 py-8 hover:bg-paper/55 md:px-6"
-      >
-        <div className="absolute left-8 top-6 h-20 w-20 rounded-full bg-primary/10 blur-2xl" />
-        <div className="absolute bottom-4 right-10 h-16 w-16 rounded-full bg-secondary/14 blur-2xl" />
-        <div className="relative grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
-          <div className="max-w-3xl space-y-3">
-            <p className="eyebrow">Explore</p>
-            <h2 className="text-3xl font-semibold tracking-tight">
-              {homeContent.writingCallout.title}
-            </h2>
-            <p className="text-base leading-8 text-ink/74">
-              {homeContent.writingCallout.description}
-            </p>
-          </div>
-          <p className="inline-flex text-sm font-semibold text-primary group-hover:text-primary/80">
-            {homeContent.writingCallout.label} →
-          </p>
-        </div>
-      </Link>
     </div>
   );
 }

@@ -40,9 +40,9 @@ export const homeContent = {
       description: "A free session to work directly with something real in your life.",
     },
     {
-      href: "/collaboration",
-      title: "Collaboration",
-      description: "Thoughtful projects across facilitation, conversation, and experiential work.",
+      href: "/writing",
+      title: "Writing",
+      description: "Poems, reflections, and notes from practice, retreat, and being human.",
     },
     {
       href: "/wall-of-love",
@@ -50,13 +50,6 @@ export const homeContent = {
       description: "Testimonials and reflections from coaching, facilitation, and retreats.",
     },
   ],
-  writingCallout: {
-    href: "/writing",
-    title: "Writing",
-    description:
-      "Poems, reflections, and notes from practice, retreat, and being human.",
-    label: "Visit page",
-  },
 };
 export const footerLinks = {
   instagram: "https://www.instagram.com/samek_mulepati/",

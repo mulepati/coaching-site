@@ -1,14 +1,17 @@
-import Link from "next/link";
 import { CTAButton } from "@/components/CTAButton";
+import { CoachingTestimonialsSection } from "@/components/CoachingTestimonialsSection";
 import { FAQSection } from "@/components/FAQSection";
 import { SectionBlock } from "@/components/SectionBlock";
-import { TestimonialCard } from "@/components/TestimonialCard";
 import { coachingPage } from "@/data/coaching";
-import { testimonials } from "@/data/testimonials";
+import { testimonialMedia, testimonials } from "@/data/testimonials";
 
 const featuredTestimonials = testimonials
   .filter((item) => item.featured)
   .slice(0, 4);
+
+const coachingMedia = testimonialMedia.filter(
+  (item) => item.context === "1:1 Coaching",
+);
 
 export default function CoachingPage() {
   return (
@@ -32,40 +35,31 @@ export default function CoachingPage() {
         </div>
       </section>
 
-      <section className="panel px-6 py-8 md:px-8">
-        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <div className="space-y-2">
-            <p className="eyebrow">Testimonials</p>
-            <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
-              What people say after working together
-            </h2>
-          </div>
-          <Link href="/wall-of-love" className="text-sm font-semibold text-primary">
-            See more on the Wall of Love →
-          </Link>
-        </div>
-        {featuredTestimonials.length > 0 ? (
-          <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {featuredTestimonials.map((testimonial) => (
-              <TestimonialCard
-                key={`${testimonial.name}-${testimonial.quote}`}
-                testimonial={testimonial}
-              />
-            ))}
-          </div>
-        ) : (
-          <div className="mt-6 rounded-[1.75rem] border border-dashed border-ink/15 bg-paper/36 px-5 py-8 text-base leading-7 text-ink/62">
-            Add testimonials in <code>data/testimonials.ts</code> and featured
-            ones will appear here automatically.
-          </div>
-        )}
-      </section>
-
       <SectionBlock
         eyebrow={coachingPage.description.eyebrow}
         title={coachingPage.description.title}
         paragraphs={coachingPage.description.paragraphs}
       />
+
+      {coachingMedia.length > 0 || featuredTestimonials.length > 0 ? (
+        <CoachingTestimonialsSection
+          mediaItems={coachingMedia}
+          writtenItems={featuredTestimonials}
+        />
+      ) : (
+        <section className="panel px-6 py-8 md:px-8">
+          <div className="space-y-2">
+            <p className="eyebrow">Testimonials</p>
+            <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
+              Hear it directly
+            </h2>
+          </div>
+          <div className="mt-6 rounded-[1.75rem] border border-dashed border-ink/15 bg-paper/36 px-5 py-8 text-base leading-7 text-ink/62">
+            Add testimonial media or featured written testimonials in{" "}
+            <code>data/testimonials.ts</code>.
+          </div>
+        </section>
+      )}
 
       <FAQSection items={coachingPage.faq} />
 
