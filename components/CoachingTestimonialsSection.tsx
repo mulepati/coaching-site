@@ -37,9 +37,6 @@ export function CoachingTestimonialsSection({
             >
               {showWritten ? "Hide" : "More"}
             </button>
-            <Link href="/wall-of-love" className="text-sm font-semibold text-primary">
-              Visit Wall of Love →
-            </Link>
           </div>
         </div>
 

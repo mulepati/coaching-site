@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import type { TestimonialMedia } from "@/data/testimonials";
 
@@ -49,11 +50,16 @@ export function TestimonialMediaSection({
   return (
     <section className="panel px-6 py-8 md:px-8">
       <div className="space-y-6">
-        <div className="max-w-3xl space-y-3">
-          <p className="eyebrow">Featured Media</p>
-          <h2 className="text-3xl font-semibold tracking-tight">
-            Hear it directly
-          </h2>
+        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-3xl space-y-3">
+            <p className="eyebrow">Featured Media</p>
+            <h2 className="text-3xl font-semibold tracking-tight">
+              Hear it directly
+            </h2>
+          </div>
+          <Link href="/wall-of-love" className="text-sm font-semibold text-primary">
+            See more →
+          </Link>
         </div>
 
         {activeItem ? (
