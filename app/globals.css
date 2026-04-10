@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-canvas text-ink antialiased;
+  background-image:
+    radial-gradient(circle at top left, rgba(239, 227, 207, 0.32), transparent 26%),
+    radial-gradient(circle at 88% 14%, rgba(129, 168, 103, 0.18), transparent 20%),
+    linear-gradient(180deg, #d4b17f 0%, #c7a26e 100%);
+}
+
+a,
+button {
+  @apply transition-colors duration-200;
+}
+
+::selection {
+  background: rgba(122, 45, 48, 0.2);
+}
+
+.page-shell {
+  @apply mx-auto flex min-h-screen w-full max-w-6xl flex-col px-6 pb-8 pt-6 md:px-8;
+}
+
+.panel {
+  @apply rounded-[2rem] border border-ink/10 bg-paper/75 shadow-soft backdrop-blur-sm;
+}
+
+.eyebrow {
+  @apply text-[11px] font-semibold uppercase tracking-[0.24em];
+  color: rgba(122, 45, 48, 0.78);
+}
+
+.text-muted {
+  color: rgba(41, 34, 37, 0.72);
+}
+
+.explore-link {
+  transform: translate3d(0, 0, 0);
+  transition:
+    transform 140ms ease-out,
+    background-color 140ms ease-out,
+    border-color 140ms ease-out;
+  will-change: transform;
+}
+
+.explore-link:hover {
+  transform: translate3d(0, -2px, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .explore-link,
+  .explore-link:hover {
+    transform: none;
+  }
+}
+
+.principle-trigger {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.principle-trigger:focus {
+  outline: none;
+}
+
+.principle-trigger span {
+  user-select: none;
+}
+
+.principle-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 260ms ease,
+    opacity 180ms ease;
+}
+
+.principle-panel.is-open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
