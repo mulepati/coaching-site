@@ -4,7 +4,7 @@ type FooterProps = {
   links: {
     instagram: string;
     twitter: string;
-    email: string;
+    podcast: string;
     booking: string;
   };
 };
@@ -21,8 +21,8 @@ export function Footer({ links }: FooterProps) {
           <Link href={links.twitter} target="_blank" className="hover:text-primary">
             Twitter/X
           </Link>
-          <Link href={`mailto:${links.email}`} className="hover:text-primary">
-            {links.email}
+          <Link href={links.podcast} target="_blank" className="hover:text-primary">
+            Podcast
           </Link>
           <Link href={links.booking} className="hover:text-primary">
             Booking

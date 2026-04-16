@@ -54,6 +54,6 @@ export const homeContent = {
 export const footerLinks = {
   instagram: "https://www.instagram.com/samek_mulepati/",
   twitter: "https://x.com/sabethunder",
-  email: "hello@samek.life",
+  podcast: "https://www.youtube.com/@ExploringAlivenessPodcast",
   booking: bookingUrl,
 };
