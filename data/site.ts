@@ -32,6 +32,11 @@ export const homeContent = {
       title: "Touch Reality",
       body: "Move from thought into action and let experience guide you. Treat everything as iteration, staying grounded in process while still reflecting, without getting stuck in overthinking or avoiding action through planning.",
     },
+    {
+      icon: "wholeness",
+      title: "Move from Wholeness",
+      body: "Act from the integrated whole rather than any single part. Let all inner voices be heard, and allow the right capacities to lead in the right moments. Make decisions from alignment, not urgency, fear, or fragmentation.",
+    },
   ],
   quickLinks: [
     {

@@ -76,6 +76,17 @@ function PrincipleIcon({ icon }: { icon: string }) {
           <path d="M26 22.7159V20.0036C26 18.3467 27.3431 17.0036 29 17.0036C30.6569 17.0036 32 18.3467 32 20.0036V23.0036" />
         </svg>
       );
+    case "wholeness":
+      return (
+        <svg {...strokeProps}>
+          <circle cx="12" cy="12" r="2.6" />
+          <path d="M12 4.2a7.8 7.8 0 1 1 0 15.6a7.8 7.8 0 1 1 0-15.6Z" />
+          <path d="M12 1.9v2.1" />
+          <path d="M12 20v2.1" />
+          <path d="M1.9 12H4" />
+          <path d="M20 12h2.1" />
+        </svg>
+      );
     default:
       return (
         <svg {...strokeProps}>
