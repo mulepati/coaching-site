@@ -2,7 +2,7 @@ export const bookingUrl = "https://cal.com/samek/free-intro";
 
 export const homeContent = {
   title: "Samek",
-  intro: "Hi, I'm Samek Mulapati.",
+  intro: "Hi, I'm Samek Mulepati.",
   about: [
     "I'm a self-discovery and transformational coach. I work with people to develop self-trust and a sense of empowerment so they can move through life with clarity, even when things are uncertain.",
     "My work is grounded in over 5,000 hours of meditation and emotional practice across traditions like Vipassana and Zen, along with training in Art of Accomplishment, Ultraspeaking, Internal Family Systems (IFS), Hakomi, Breathwork, and relational practices such as Nonviolent Communication.",
