@@ -34,8 +34,8 @@ export const homeContent = {
     },
     {
       icon: "wholeness",
-      title: "Move from Wholeness",
-      body: "Act from the integrated whole rather than any single part. Let all inner voices be heard, and allow the right capacities to lead in the right moments. Make decisions from alignment, not urgency, fear, or fragmentation.",
+      title: "Honor My Wholeness",
+      body: "Every input is acknowledged as valid, and no internal experience is excluded or dismissed. Signals like anger, fear, and sadness are allowed to exist without control or shutdown. Expression is allowed, but it does not determine action. It is not obedience to every feeling, indulgence, prioritizing harmony over truth, or centering identity around one part.",
     },
   ],
   quickLinks: [
