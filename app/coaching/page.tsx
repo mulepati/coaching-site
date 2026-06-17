@@ -68,7 +68,7 @@ export default function CoachingPage() {
           {coachingPage.finalCta.title}
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-base leading-8 text-ink/74">
-          Start with a free 60-minute coaching session.
+          Start with a free coaching session.
         </p>
         <div className="mt-6">
           <CTAButton

@@ -1,4 +1,4 @@
-export const bookingUrl = "https://cal.com/samek/free-intro";
+export const bookingUrl = "/book";
 
 export const homeContent = {
   title: "Samek",

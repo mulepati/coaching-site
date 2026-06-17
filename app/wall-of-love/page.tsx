@@ -78,7 +78,7 @@ export default function WallOfLovePage() {
             href={bookingUrl}
             className="inline-flex rounded-full bg-primary px-5 py-3 text-sm font-semibold text-paper hover:-translate-y-0.5 hover:bg-primary/92"
           >
-            Book a free 60-minute session
+            Book a free session
           </Link>
         </div>
       </section>

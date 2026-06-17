@@ -5,9 +5,9 @@ export const coachingPage = {
     eyebrow: "Coaching",
     title: "Bring what's alive.",
     description: "We work on it together.",
-    supportingLine: "Start with a free 60-minute coaching session.",
+    supportingLine: "Start with a free coaching session.",
     cta: {
-      label: "Book a free 60-minute session",
+      label: "Book a free session",
       href: bookingUrl,
     },
   },
@@ -59,7 +59,7 @@ export const coachingPage = {
   ],
   finalCta: {
     title: "Bring what's alive.",
-    label: "Book a free 60-minute session",
+    label: "Book a free session",
     href: bookingUrl,
   },
 };
