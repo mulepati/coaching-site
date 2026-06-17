@@ -33,7 +33,7 @@ export function CoachingTestimonialsSection({
             <button
               type="button"
               onClick={() => setShowWritten((value) => !value)}
-              className="explore-link inline-flex items-center rounded-full border border-ink/15 bg-paper/56 px-4 py-2.5 text-sm font-semibold text-ink hover:border-primary/28 hover:bg-paper/76 hover:text-primary"
+              className="explore-link inline-flex items-center rounded-full border border-ink/15 bg-paper/56 px-4 py-2.5 text-sm font-semibold text-ink hover:border-primary/28 hover:bg-paper/76 hover:text-primary dark:border-white/15 dark:bg-dark-surface dark:text-dark-text dark:hover:border-dark-accent/28 dark:hover:bg-dark-border dark:hover:text-dark-accent"
             >
               {showWritten ? "Hide" : "More"}
             </button>

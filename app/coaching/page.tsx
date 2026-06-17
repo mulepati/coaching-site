@@ -22,7 +22,7 @@ export default function CoachingPage() {
           <h1 className="max-w-2xl text-4xl font-semibold tracking-tight md:text-6xl">
             {coachingPage.hero.title}
           </h1>
-          <div className="space-y-3 text-lg leading-8 text-ink/76">
+          <div className="space-y-3 text-lg leading-8 text-ink/76 dark:text-dark-text/76">
             <p>{coachingPage.hero.description}</p>
             <p>{coachingPage.hero.supportingLine}</p>
           </div>
@@ -54,7 +54,7 @@ export default function CoachingPage() {
               Hear it directly
             </h2>
           </div>
-          <div className="mt-6 rounded-[1.75rem] border border-dashed border-ink/15 bg-paper/36 px-5 py-8 text-base leading-7 text-ink/62">
+          <div className="mt-6 rounded-[1.75rem] border border-dashed border-ink/15 bg-paper/36 px-5 py-8 text-base leading-7 text-ink/62 dark:border-white/15 dark:bg-dark-surface dark:text-dark-text/62">
             Add testimonial media or featured written testimonials in{" "}
             <code>data/testimonials.ts</code>.
           </div>
@@ -63,12 +63,12 @@ export default function CoachingPage() {
 
       <FAQSection items={coachingPage.faq} />
 
-      <section className="rounded-[2rem] border border-primary/18 bg-primary/8 px-6 py-10 text-center md:px-8">
+      <section className="rounded-[2rem] border border-primary/18 bg-primary/8 px-6 py-10 text-center dark:border-dark-accent/18 dark:bg-dark-accent/8 md:px-8">
         <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
           {coachingPage.finalCta.title}
         </h2>
-        <p className="mx-auto mt-3 max-w-2xl text-base leading-8 text-ink/74">
-          Start with a free coaching session.
+        <p className="mx-auto mt-3 max-w-2xl text-base leading-8 text-ink/74 dark:text-dark-text/74">
+          If this resonates, apply to work with me.
         </p>
         <div className="mt-6">
           <CTAButton

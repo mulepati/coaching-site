@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import type { TestimonialMedia } from "@/data/testimonials";
 
@@ -50,21 +49,16 @@ export function TestimonialMediaSection({
   return (
     <section className="panel px-6 py-8 md:px-8">
       <div className="space-y-6">
-        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <div className="max-w-3xl space-y-3">
-            <p className="eyebrow">Featured Media</p>
-            <h2 className="text-3xl font-semibold tracking-tight">
-              Hear it directly
-            </h2>
-          </div>
-          <Link href="/wall-of-love" className="text-sm font-semibold text-primary">
-            See more →
-          </Link>
+        <div className="max-w-3xl space-y-3">
+          <p className="eyebrow">Featured Media</p>
+          <h2 className="text-3xl font-semibold tracking-tight">
+            Hear it directly
+          </h2>
         </div>
 
         {activeItem ? (
           <div className="grid gap-5 md:grid-cols-[1.1fr_0.9fr]">
-            <div className="rounded-[1.75rem] border border-ink/10 bg-paper/42 p-5">
+            <div className="rounded-[1.75rem] border border-ink/10 bg-paper/42 p-5 dark:border-white/10 dark:bg-dark-bg/60">
               <div className="space-y-4">
                 <div>
                   <p className="eyebrow">{activeItem.context}</p>
@@ -77,25 +71,25 @@ export function TestimonialMediaSection({
                     controls
                     poster={activeItem.poster}
                     src={activeItem.src}
-                    className="aspect-video w-full rounded-[1.25rem] border border-ink/10 bg-ink/10"
+                    className="aspect-video w-full rounded-[1.25rem] border border-ink/10 bg-ink/10 dark:border-white/10 dark:bg-white/5"
                   />
                 ) : (
                   <audio controls src={activeItem.src} className="w-full" />
                 )}
                 {activeItem.quote ? (
-                  <p className="text-base leading-8 text-ink/76">
-                    "{activeItem.quote}"
+                  <p className="text-base leading-8 text-ink/76 dark:text-dark-text/76">
+                    &ldquo;{activeItem.quote}&rdquo;
                   </p>
                 ) : null}
                 {activeItem.type === "audio" && activeItem.transcript ? (
-                  <p className="text-sm leading-7 text-ink/68">
+                  <p className="text-sm leading-7 text-ink/68 dark:text-dark-text/68">
                     {activeItem.transcript}
                   </p>
                 ) : null}
               </div>
             </div>
 
-            <div className="grid gap-3 content-start">
+            <div className="grid content-start gap-3">
               {items.map((item) => {
                 const isActive = item.id === activeItem.id;
 
@@ -106,8 +100,8 @@ export function TestimonialMediaSection({
                     onClick={() => setActiveId(item.id)}
                     className={`flex items-center gap-3 rounded-[1.25rem] border px-4 py-3 text-left transition-colors duration-200 ${
                       isActive
-                        ? "border-primary/30 bg-primary/10 text-primary"
-                        : "border-ink/10 bg-paper/42 text-ink hover:bg-paper/55"
+                        ? "border-primary/30 bg-primary/10 text-primary dark:border-dark-accent/30 dark:bg-dark-accent/10 dark:text-dark-accent"
+                        : "border-ink/10 bg-paper/42 text-ink hover:bg-paper/55 dark:border-white/10 dark:bg-dark-surface dark:text-dark-text dark:hover:bg-dark-border"
                     }`}
                   >
                     <span className="flex h-9 w-9 items-center justify-center rounded-full border border-current/20">
@@ -117,7 +111,7 @@ export function TestimonialMediaSection({
                       <span className="block text-sm font-semibold">
                         {item.name}
                       </span>
-                      <span className="block text-xs text-ink/58">
+                      <span className="block text-xs text-ink/58 dark:text-dark-text/58">
                         {item.context}
                       </span>
                     </span>
@@ -127,7 +121,7 @@ export function TestimonialMediaSection({
             </div>
           </div>
         ) : (
-          <div className="rounded-[1.75rem] border border-dashed border-ink/15 bg-paper/36 px-5 py-8 text-base leading-7 text-ink/62">
+          <div className="rounded-[1.75rem] border border-dashed border-ink/15 bg-paper/36 px-5 py-8 text-base leading-7 text-ink/62 dark:border-white/15 dark:bg-dark-surface dark:text-dark-text/62">
             Audio and video reflections will live here once the media files are
             added.
           </div>

@@ -23,19 +23,19 @@ export function SectionBlock({
           {title}
         </h2>
         {description ? (
-          <p className="text-lg leading-8 text-ink/76">{description}</p>
+          <p className="text-lg leading-8 text-ink/76 dark:text-dark-text/76">{description}</p>
         ) : null}
         {paragraphs?.map((paragraph) => (
-          <p key={paragraph} className="text-base leading-8 text-ink/74">
+          <p key={paragraph} className="text-base leading-8 text-ink/74 dark:text-dark-text/74">
             {paragraph}
           </p>
         ))}
         {items ? (
-          <ul className="grid gap-3 text-base text-ink/76 md:grid-cols-2">
+          <ul className="grid gap-3 text-base text-ink/76 dark:text-dark-text/76 md:grid-cols-2">
             {items.map((item) => (
               <li
                 key={item}
-                className="rounded-2xl border border-ink/10 bg-paper/45 px-4 py-3"
+                className="rounded-2xl border border-ink/10 bg-paper/45 px-4 py-3 dark:border-white/10 dark:bg-dark-surface"
               >
                 {item}
               </li>

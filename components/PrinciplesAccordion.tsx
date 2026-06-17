@@ -117,7 +117,7 @@ export function PrinciplesAccordion({
         return (
           <div
             key={principle.title}
-            className="rounded-[1.5rem] border border-ink/10 bg-paper/50 px-4 py-4"
+            className="rounded-[1.5rem] border border-ink/10 bg-paper/50 px-4 py-4 dark:border-white/10 dark:bg-dark-surface"
           >
             <button
               type="button"
@@ -125,12 +125,14 @@ export function PrinciplesAccordion({
               onClick={() => toggleItem(index)}
               className="principle-trigger flex w-full select-none items-center gap-4 text-left"
             >
-              <span className="flex h-10 w-10 items-center justify-center rounded-full border border-primary/20 bg-primary/8 text-primary">
+              <span className="flex h-10 w-10 items-center justify-center rounded-full border border-primary/20 bg-primary/8 text-primary dark:border-dark-accent/20 dark:bg-dark-accent/10 dark:text-dark-accent">
                 <PrincipleIcon icon={principle.icon} />
               </span>
               <span
                 className={`text-lg font-semibold transition-colors duration-200 ${
-                  isOpen ? "text-primary" : "text-ink"
+                  isOpen
+                    ? "text-primary dark:text-dark-accent"
+                    : "text-ink dark:text-dark-text"
                 }`}
               >
                 {principle.title}
@@ -141,7 +143,7 @@ export function PrinciplesAccordion({
               aria-hidden={!isOpen}
             >
               <div className="overflow-hidden">
-                <p className="ml-14 pt-4 text-base leading-8 text-ink/74">
+                <p className="ml-14 pt-4 text-base leading-8 text-ink/74 dark:text-dark-text/74">
                   {principle.body}
                 </p>
               </div>

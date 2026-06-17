@@ -174,7 +174,7 @@ export const frameworkGroups: FrameworkGroup[] = [
     name: "Therapeutic / Somatic",
     items: [
       "Internal Family Systems (IFS)",
-      "Hakomi Level 1 training",
+      "Hakomi Level 1 training (ongoing)",
       "Gendlin Focusing",
     ],
   },

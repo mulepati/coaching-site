@@ -4,8 +4,8 @@ export const homeContent = {
   title: "Samek",
   intro: "Hi, I'm Samek Mulepati.",
   about: [
-    "I'm a self-discovery and transformational coach. I work with people to develop self-trust and a sense of empowerment so they can move through life with clarity, even when things are uncertain.",
-    "My work is grounded in over 5,000 hours of meditation and emotional practice across traditions like Vipassana and Zen, along with training in Art of Accomplishment, Ultraspeaking, Internal Family Systems (IFS), Hakomi, Breathwork, and relational practices such as Nonviolent Communication.",
+    "I'm a coach and facilitator. My work is shaped by over 5,000 hours of personal practice across meditation traditions, somatic work, and emotional inquiry. That time has taught me to trust the signals of my own body and to attune to what is happening in others.",
+    "The modalities I draw from include Vipassana, Zen, Internal Family Systems, Hakomi, Breathwork, Art of Accomplishment, and Nonviolent Communication. What all of it has given me is the ability to stay in real contact with what is actually moving in a session.",
   ],
   lineageLink: {
     href: "/lineage",
@@ -42,7 +42,7 @@ export const homeContent = {
     {
       href: "/coaching",
       title: "Coaching",
-      description: "A free session to work directly with something real in your life.",
+      description: "Apply to work with me and begin moving toward the life you actually want.",
     },
     {
       href: "/writing",

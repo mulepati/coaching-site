@@ -5,9 +5,9 @@ export const coachingPage = {
     eyebrow: "Coaching",
     title: "Bring what's alive.",
     description: "We work on it together.",
-    supportingLine: "Start with a free coaching session.",
+    supportingLine: "If this resonates, apply to work with me.",
     cta: {
-      label: "Book a free session",
+      label: "Apply to work with me",
       href: bookingUrl,
     },
   },
@@ -15,9 +15,10 @@ export const coachingPage = {
     eyebrow: "Coaching",
     title: "A simple, direct way of working",
     paragraphs: [
-      "I help people build the self-trust and inner tools needed to move through life with more clarity, confidence, and enjoyment. The work is about feeling more empowered to pursue what you want, especially when things feel uncertain, stuck, or emotionally complicated.",
-      "You might bring a decision, a stuck pattern, a work challenge, something around money, or just the sense that something in your life wants attention.",
-      "We work with what is actually happening right now. That can include your emotions, your body, your thoughts, and the deeper patterns underneath them. The point is not to talk around your life. It's to help something move.",
+      "I help people build the life they want, with enjoyment and ease.",
+      "The work is about identifying and changing the deep patterns that shape how you move through your life. Over time, this creates a real sense of confidence and power in how you approach what matters to you.",
+      "As you commit to moving toward what you actually want, things will come up. Decisions to make. Patterns to untangle. Challenges at work or with money. Emotional weight. Or simply the feeling that something in your life wants attention. We work directly with whatever is arising as you move toward the life you are building.",
+      "Taking on a new client is a significant commitment on my part. I work with a small number of people at a time and give each person my full investment. I ask for the same in return.",
     ],
   },
   faq: [
@@ -58,8 +59,8 @@ export const coachingPage = {
     },
   ],
   finalCta: {
-    title: "Bring what's alive.",
-    label: "Book a free session",
+    title: "Ready to commit to yourself?",
+    label: "Apply to work with me",
     href: bookingUrl,
   },
 };

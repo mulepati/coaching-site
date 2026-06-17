@@ -29,11 +29,10 @@ export default function BookPage() {
         <div className="mx-auto max-w-xl space-y-4">
           <p className="eyebrow">Received</p>
           <h1 className="text-4xl font-semibold tracking-tight">
-            See you on the call.
+            Application received.
           </h1>
-          <p className="text-base leading-8 text-ink/72">
-            Your answers are on their way to me. I&apos;ll be in touch shortly
-            with a time that works.
+          <p className="text-base leading-8 text-ink/72 dark:text-dark-text/72">
+            Your answers are on their way to me. I&apos;ll be in touch shortly.
           </p>
         </div>
       </section>
@@ -44,14 +43,14 @@ export default function BookPage() {
     <div className="space-y-5">
       <section className="panel px-6 py-10 md:px-8 md:py-12">
         <div className="max-w-2xl space-y-3">
-          <p className="eyebrow">Before Our Call</p>
+          <p className="eyebrow">Apply</p>
           <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
-            Let&apos;s make this{" "}
-            <span className="italic text-primary">session count.</span>
+            This is the{" "}
+            <span className="italic text-primary dark:text-dark-accent">first step.</span>
           </h1>
-          <p className="text-base leading-8 text-ink/72">
+          <p className="text-base leading-8 text-ink/72 dark:text-dark-text/72">
             Take 5–10 minutes to answer honestly. The more real you are here,
-            the more powerful our time together will be.
+            the clearer it will be whether this is the right fit.
           </p>
         </div>
       </section>
@@ -134,10 +133,10 @@ export default function BookPage() {
         {/* Q4: Scale */}
         <QuestionBlock number="04">
           <fieldset>
-            <legend className="mb-3 text-base font-normal leading-snug text-ink">
+            <legend className="mb-3 text-base font-normal leading-snug text-ink dark:text-dark-text">
               On a scale of 1–10, how ready and willing are you to make the
               necessary changes to get the life you want?
-              <span className="mt-1 block text-sm text-ink/50">
+              <span className="mt-1 block text-sm text-ink/50 dark:text-dark-text/50">
                 There&apos;s no wrong answer — only an honest one.
               </span>
             </legend>
@@ -150,13 +149,13 @@ export default function BookPage() {
                     value={String(n)}
                     className="peer sr-only"
                   />
-                  <span className="block rounded-lg border border-ink/15 bg-paper/60 py-2.5 text-sm font-semibold text-ink/50 transition-all peer-checked:border-primary peer-checked:bg-primary peer-checked:text-paper hover:border-primary/50 hover:text-primary">
+                  <span className="block rounded-lg border border-ink/15 bg-paper/60 py-2.5 text-sm font-semibold text-ink/50 transition-all peer-checked:border-primary peer-checked:bg-primary peer-checked:text-paper hover:border-primary/50 hover:text-primary dark:border-white/15 dark:bg-dark-surface dark:text-dark-text/50 dark:peer-checked:border-dark-accent dark:peer-checked:bg-dark-accent dark:peer-checked:text-dark-bg dark:hover:border-dark-accent/50 dark:hover:text-dark-accent">
                     {n}
                   </span>
                 </label>
               ))}
             </div>
-            <div className="mt-2 flex justify-between text-[11px] uppercase tracking-wide text-ink/40">
+            <div className="mt-2 flex justify-between text-[11px] uppercase tracking-wide text-ink/40 dark:text-dark-text/40">
               <span>Not ready at all</span>
               <span>Absolutely all in</span>
             </div>
@@ -215,20 +214,20 @@ export default function BookPage() {
         </QuestionBlock>
 
         <div className="panel px-6 py-8 text-center md:px-8">
-          <p className="mb-5 text-sm leading-7 text-ink/54">
+          <p className="mb-5 text-sm leading-7 text-ink/54 dark:text-dark-text/54">
             Your answers go directly to me before our call.
             <br />
             Everything you share is completely confidential.
           </p>
           {status === "error" && (
-            <p className="mb-4 text-sm text-primary">
+            <p className="mb-4 text-sm text-primary dark:text-dark-accent">
               Something went wrong — please try again or email me directly.
             </p>
           )}
           <button
             type="submit"
             disabled={status === "submitting"}
-            className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-paper shadow-soft transition hover:-translate-y-0.5 hover:bg-primary/92 disabled:opacity-60"
+            className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-paper shadow-soft transition hover:-translate-y-0.5 hover:bg-primary/92 disabled:opacity-60 dark:bg-dark-accent dark:text-dark-bg dark:shadow-none dark:hover:bg-dark-accent/90"
           >
             {status === "submitting" ? "Sending…" : "Submit My Answers →"}
           </button>
@@ -239,10 +238,10 @@ export default function BookPage() {
 }
 
 const inputCls =
-  "w-full rounded-xl border border-ink/15 bg-paper/60 px-4 py-3 text-sm text-ink placeholder:text-ink/30 focus:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/12";
+  "w-full rounded-xl border border-ink/15 bg-paper/60 px-4 py-3 text-sm text-ink placeholder:text-ink/30 focus:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/12 dark:border-white/15 dark:bg-dark-surface dark:text-dark-text dark:placeholder:text-dark-text/30 dark:focus:border-dark-accent/50 dark:focus:ring-dark-accent/12";
 
 const textareaCls =
-  "w-full resize-y rounded-xl border border-ink/15 bg-paper/60 px-4 py-3 text-sm text-ink placeholder:text-ink/30 focus:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/12 min-h-[110px] leading-relaxed";
+  "w-full resize-y rounded-xl border border-ink/15 bg-paper/60 px-4 py-3 text-sm text-ink placeholder:text-ink/30 focus:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/12 min-h-[110px] leading-relaxed dark:border-white/15 dark:bg-dark-surface dark:text-dark-text dark:placeholder:text-dark-text/30 dark:focus:border-dark-accent/50 dark:focus:ring-dark-accent/12";
 
 function QuestionBlock({
   number,
@@ -272,10 +271,10 @@ function Field({
 }) {
   return (
     <div className="space-y-2">
-      <label htmlFor={htmlFor} className="block text-base leading-snug text-ink">
+      <label htmlFor={htmlFor} className="block text-base leading-snug text-ink dark:text-dark-text">
         {label}
         {hint && (
-          <span className="mt-1 block text-sm text-ink/50">{hint}</span>
+          <span className="mt-1 block text-sm text-ink/50 dark:text-dark-text/50">{hint}</span>
         )}
       </label>
       {children}
