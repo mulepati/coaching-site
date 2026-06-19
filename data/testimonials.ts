@@ -34,6 +34,14 @@ export const testimonialMedia: TestimonialMedia[] = [
     src: "/testimonials/video/justin-testimonial.mp4",
   },
   {
+    id: "frank-video",
+    type: "video",
+    name: "Frank",
+    context: "1:1 Coaching",
+    title: "Frank",
+    src: "/testimonials/video/frank-testimonial.mp4",
+  },
+  {
     id: "dennis-xiao-audio",
     type: "audio",
     name: "Dennis Xiao",
